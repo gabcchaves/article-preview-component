@@ -78,6 +78,7 @@ body {
 	font-size: 1vw;
 	color: var(--desaturated-dark-blue);
 	flex: 1;
+	margin-top: 5%;
 }
 
 .card-author-info {
@@ -114,6 +115,49 @@ body {
 	width: 10%;
 	padding: 2%;
 }
+.card-author-info img {
 
 /* Mobile settings */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 1080px) {
+	.card {
+		width: 90%;
+		height: 70%;
+		flex-direction: column;
+	}
+
+	.card-preview-img, .card-info {
+		width: 100%;
+	}
+
+	.card-preview-img {
+		border-radius: 10px 10px 0 0;
+		height: 40%;
+	}
+
+	.card-info {
+		height: 60%;
+		padding: 10%;
+	}
+
+	.card-title {
+		font-size: 2.5vh;
+	}
+
+	.card-description {
+		font-size: 1.8vh;
+		margin-top: 5%;
+	}
+	
+	.card-author-info picture figcaption strong,
+	.card-author-info picture figcaption time {
+		font-size: 1.8vh;
+	}
+
+	.card-author-info picture img {
+		width: 18%;
+	}
+
+	.card-author-info img {
+		width: 12%;
+	}
+}
