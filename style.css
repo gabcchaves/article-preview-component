@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* Resettings */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1rem;
+}
+
+img, picture {
+	max-width: 100%;
+	display: block;
+	line-height: 0;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
+}
+
+/* Colors */
+:root {
+	--very-dark-grayish-blue: hsl(217, 19%, 35%);
+	--desaturated-dark-blue: hsl(214, 17%, 51%);
+	--grayish-blue: hsl(212, 23%, 69%);
+	--light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+/* General setttings */
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: var(--light-grayish-blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-family: 'Manrope', sans-serif;
+}
+
+.card {
+	width: 60%;
+	height: 45%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 10px 60px -15px var(--grayish-blue);
+	display: flex;
+}
+
+.card-preview-img {
+	width: 40%;
+	border-radius: 10px 0 0 10px;
+}
+
+.card-info {
+	width: 60%;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-title {
+	font-size: 1.5vw;
+	color: var(--very-dark-grayish-blue);
+}
+
+.card-description {
+	font-size: 1vw;
+	color: var(--desaturated-dark-blue);
+	flex: 1;
+}
+
+.card-author-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-author-info picture img {
+	width: 10%;
+	border-radius: 50%;
+	margin-right: 5%;
+	padding: 0;
+}
+
+.card-author-info picture {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	line-height: 2.5vh;
+}
+
+.card-author-info picture figcaption strong,
+.card-author-info picture figcaption time {
+	font-size: 0.9vw;
+}
+
+.card-author-info picture figcaption strong { color: var(--very-dark-grayish-blue); }
+.card-author-info picture figcaption time { color: var(--grayish-blue); }
+
+.card-author-info img {
+	border-radius: 50%;
+	background-color: var(--light-grayish-blue);
+	width: 10%;
+	padding: 2%;
+}
+
+/* Mobile settings */
+@media only screen and (max-width: 600px) {}
