@@ -49,8 +49,7 @@ body {
 }
 
 .card {
-	width: 60%;
-	height: 45%;
+	width: 55%;
 	background-color: white;
 	border-radius: 10px;
 	box-shadow: 0 10px 60px -15px var(--grayish-blue);
@@ -85,6 +84,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 5%;
 }
 
 .card-author-info picture img {
@@ -110,12 +110,25 @@ body {
 .card-author-info picture figcaption time { color: var(--grayish-blue); }
 
 .card-author-info img {
+	width: 100%;
 	border-radius: 50%;
-	background-color: var(--light-grayish-blue);
-	width: 10%;
-	padding: 2%;
+	padding: 25%;
 }
-.card-author-info img {
+
+.card-author-info div {
+	box-sizing: content-box;
+	width: 10%;
+	background-color: var(--light-grayish-blue);
+	border-radius: 50%;
+}
+
+.card-author-info div:hover {
+	background-color: var(--desaturated-dark-blue);
+}
+
+.card-author-info img:hover {
+	filter: brightness(100);
+}
 
 /* Mobile settings */
 @media only screen and (max-width: 1080px) {
@@ -157,7 +170,7 @@ body {
 		width: 18%;
 	}
 
-	.card-author-info img {
+	.card-author-info div {
 		width: 12%;
 	}
 }
