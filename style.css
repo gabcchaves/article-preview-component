@@ -134,7 +134,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--desaturated-dark-blue);
+	background-color: var(--very-dark-grayish-blue);
 	color: var(--light-grayish-blue);
 	border-radius: 10px;
 	visibility: hidden;
