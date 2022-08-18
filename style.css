@@ -53,6 +53,7 @@ body {
 	background-color: white;
 	display: flex;
 	border-radius: 10px;
+	box-shadow: 0 30px 90px -50px var(--grayish-blue);
 }
 
 .card-preview-img {
@@ -85,7 +86,10 @@ body {
 .card-author-info picture {
 	display: flex;
 	align-items: center;
-	line-height: 200%;
+}
+
+.card-author-info picture img {
+	border-radius: 50%;
 }
 
 .card-author-info picture strong {
@@ -99,4 +103,73 @@ body {
 .hover-menu {
 	background-color: lime;
 	display: flex;
+}
+
+/* Desktop/Laptop view */
+@media screen and (min-width: 1080px) {
+	.card {
+		width: 60%;
+		min-height: 50%;
+	}
+
+	.card-info {
+		padding: 5%;
+	}
+
+	.card-title {
+		font-size: 1.7vw;
+		margin-bottom: 5%;
+	}
+	
+	.card-description {
+		font-size: 1.1vw;
+		margin-bottom: 5%;
+		flex: 1;
+	}
+
+	.card-author-info {
+		align-items: center;
+	}
+
+	.card-author-info picture img {
+		width: 15%;
+		margin-right: 5%;
+	}
+
+	.card-author-info picture strong,
+	.card-author-info picture time {
+		font-size: 1vw;
+		line-height: 1.5;
+	}
+
+	.share-button-container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex: 1;
+		height: 100%;
+	}
+
+	.share-button-container div {
+		background-color: var(--light-grayish-blue);
+		width: 30%;
+		height: 60%;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.share-button-container div:hover {
+		background-color: var(--very-dark-grayish-blue);
+		cursor: pointer;
+	}
+
+	.share-button-container img:hover {
+		filter: brightness(100);
+	}
+
+	.hover-menu {
+		display: none;
+	}
 }
