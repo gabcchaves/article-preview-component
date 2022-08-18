@@ -86,6 +86,10 @@ body {
 	line-height: 1.5;
 }
 
+.card-author-info picture img {
+		border-radius: 50%;
+}
+
 .card-author-info picture strong {
 	color: var(--very-dark-grayish-blue);
 }
@@ -98,10 +102,20 @@ body {
 	display: none;
 	background-color: var(--very-dark-grayish-blue);
 	color: var(--grayish-blue);
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .share-button-container div {
+	padding: 30%;
+	width: 100%;
+	border-radius: 50%;
 	background-color: var(--light-grayish-blue);
+}
+
+.share-button-container div img {
+	width: 100%;
+	height: 100%;
 }
 
 .share-button-container div:hover {
@@ -113,6 +127,7 @@ body {
 	filter: brightness(100);
 }
 
+/* Desktop/Laptop settings */
 @media screen and (min-width: 1081px) {
 	.card {
 		width: 70%;
@@ -135,7 +150,6 @@ body {
 
 	.card-author-info picture img {
 		width: 15%;
-		border-radius: 50%;
 		margin-right: 5%;
 	}
 
@@ -148,17 +162,6 @@ body {
 		width: 10%;
 	}
 
-	.share-button-container div {
-		width: 100%;
-		border-radius: 50%;
-		padding: 30%;
-	}
-
-	.share-button-container div img {
-		width: 100%;
-		height: 100%;
-	}
-
 	.hover-menu {
 		position: absolute;
 		bottom: 33%;
@@ -166,8 +169,6 @@ body {
 		width: 40%;
 		height: 15%;
 		border-radius: 10px;
-		align-items: center;
-		justify-content: space-evenly;
 	}
 
 	.hover-menu:after {
@@ -179,5 +180,64 @@ body {
 		top: 100%;
 		border: 1vw solid transparent;
 		border-top: 1vw solid var(--very-dark-grayish-blue);
+	}
+}
+
+/* Mobile settings */
+@media screen and (max-width: 1080px) {
+	.card {
+		width: 88%;
+		flex-direction: column;
+	}
+
+	.card-preview-img {
+		width: 100%;
+		height: 40%;
+	}
+
+	.card-info {
+		width: 100%;
+		height: 60%;
+		padding: 10%;
+		border-bottom-left-radius: inherit;
+		border-bottom-right-radius: inherit;
+	}
+
+	.card-title {
+		font-size: 2.5vh;
+		margin-bottom: 5%;
+	}
+
+	.card-description {
+		font-size: 2vh;
+		flex: 1;
+	}
+
+	.card-author-info {
+		width: 100%;
+	}
+
+	.card-author-info picture img {
+		width: 15%;
+		border-radius: 50%;
+		margin-right: 5%;
+	}
+
+	.card-author-info picture strong,
+	.card-author-info picture time {
+		font-size: 2vh;
+	}
+
+	.share-button-container {
+		width: 15%;
+	}
+
+	.hover-menu {
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-author-info picture {
+		display: flex;
 	}
 }
