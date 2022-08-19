@@ -175,10 +175,10 @@ body {
 
 	.hover-menu {
 		position: absolute;
-		bottom: 33%;
-		right: -7.5%;
+		bottom: 95%;
+		right: -10%;
 		width: 40%;
-		height: 15%;
+		height: 50%;
 		border-radius: 10px;
 	}
 
