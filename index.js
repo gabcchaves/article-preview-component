@@ -4,7 +4,7 @@
 function toggleHoverMenu() {
 	//let hoverMenu = document.getElementsByClassNames("hover-menu");
 	// Mobile
-	if (window.matchMedia("(max-width: 1080px)")) {
+	if (window.matchMedia("(max-width: 1080px)").matches) {
 		let cardAuthorInfo = document.getElementsByClassName("card-author-info")[0];
 
 		// Check state
@@ -21,5 +21,14 @@ function toggleHoverMenu() {
 			cardAuthorInfo.childNodes[5].childNodes[1].style.backgroundColor = "var(--grayish-blue)";
 			cardAuthorInfo.childNodes[5].childNodes[1].firstChild.style.filter = "brightness(100)";
 		}
+	} else if (window.matchMedia("(min-width: 1088px)").matches) {
+		let hoverMenu = document.getElementsByClassName("hover-menu")[0];
+		console.log(hoverMenu.style.display);
+		if (hoverMenu.style.display == "none" || hoverMenu.style.display == "") {
+			hoverMenu.style.display = "flex";
+		} else {
+			hoverMenu.style.display = "none";
+		}
 	}
+		
 }
